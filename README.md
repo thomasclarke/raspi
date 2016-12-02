@@ -7,4 +7,4 @@ This project is my first using the Raspberry Pi and GPIO ports. It is very simpl
 
 ### <i>Diagram</i> [made in <i>Fritzing</i>]:
 <i> I apologise for any imperfections - I'm just starting out!</i><br>
-<img src="/diagram1.png" length=400 width=400>
+<img src="/sample/diagram1.png" length=400 width=400>
