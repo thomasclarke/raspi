@@ -10,19 +10,19 @@ GPIO.cleanup
 # variables
 outp = GPIO.OUT # output GPIO
 inp = GPIO.IN # input GPIO
-on = GPIO.HIGH # GPIO is turned on if this var is used
-off = GPIO.LOW # GPIO is turned off if this var is used
+hi = GPIO.HIGH # GPIO is turned on if this var is used
+lo = GPIO.LOW # GPIO is turned off if this var is used
  
 # functions
 def inpt(gpio): # set a GPIO to input
     GPIO.setup(gpio, inp)
-def outp(gpio): # set a GPIO to output
+def outpt(gpio): # set a GPIO to output
     GPIO.setup(gpio, outp)
 def on(gpio): # turn a GPIO on
-    outp(gpio)
-    GPIO.output(gpio, on)
+    outpt(gpio)
+    GPIO.output(gpio, hi)
 def off(gpio): # turn a GPIO off
-    outp(gpio)
-    GPIO.output(gpio, off)
+    outpt(gpio)
+    GPIO.output(gpio, lo)
 def cln(): # reset any existing settings for GPIOs:
 	GPIO.cleanup
