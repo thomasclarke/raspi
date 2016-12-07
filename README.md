@@ -11,7 +11,7 @@ This project is my first using the Raspberry Pi and GPIO ports. It is very simpl
 ## Footnote
 `raspi.py` is a module that I will probably use in most of my projects where I have done all of the setup necessary to use
 python with the Pi, so I can get straight on with the task in hand. To use this in different directories I will have to put this at the top of my code...<br>
-` import sys `
-` sys.path.insert(0, '../') `
-` import raspi as p`
+` import sys ` <br>
+` sys.path.insert(0, '../') `<br>
+` import raspi as p` <br>
 Otherwise I could duplicate the `raspi.py` file into the directory.
