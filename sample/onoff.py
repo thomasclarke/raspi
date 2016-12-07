@@ -10,7 +10,7 @@ import raspi as p
 
 # components
 led = 26
-p.off(26)
+p.off(led)
 
 
 print("ON or OFF?")
