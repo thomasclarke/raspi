@@ -14,4 +14,5 @@ python with the Pi, so I can get straight on with the task in hand. To use this 
 ` import sys ` <br>
 ` sys.path.insert(0, '../') `<br>
 ` import raspi as p` <br>
+This allows me to import the module from the parent directory.<br> 
 Otherwise I could duplicate the `raspi.py` file into the directory.
