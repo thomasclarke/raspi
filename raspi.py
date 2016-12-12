@@ -26,3 +26,4 @@ def off(gpio): # turn a GPIO off
     GPIO.output(gpio, lo)
 def cln(): # reset any existing settings for GPIOs:
 	GPIO.cleanup
+

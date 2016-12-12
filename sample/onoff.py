@@ -9,7 +9,7 @@ import raspi as p
 
 
 # components
-led = 26
+led = 17
 p.off(led)
 
 
