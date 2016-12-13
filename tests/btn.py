@@ -1,23 +1,31 @@
 import time
+import os
 import sys
 sys.path.insert(0, '../')
 import raspi as p 
 import RPi.GPIO as g
-leds = (17,18)
-p.outpt(leds)
-p.off(leds)
 
-btn = 21
-p.inpt(btn)
+
+led = 26
+p.outpt(led)
+p.off(led)
+
+btn = 17
+p.btn_setup(btn)
 
 while True:
-	if g.input(btn) == False:
-		print("Button pressed")
-		p.on(leds)
-	else:
-		print("Waiting...")
-		p.off(leds)
-	time.sleep(0.1)
-
+	try:	
+		print(">> ")
+		if g.input(btn) == True:
+			print("<< Button pressed >>")
+			p.on(led)
+		else:
+			print("Push button")
+			p.off(led)
+		time.sleep(0.5)
+	except KeyboardInterrupt:
+		print()
+		print("<< Process ended by CTRL-C >>")
+		break
 
 

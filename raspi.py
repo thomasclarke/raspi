@@ -27,3 +27,5 @@ def off(gpio): # turn a GPIO off
 def cln(): # reset any existing settings for GPIOs:
 	GPIO.cleanup
 
+def btn_setup(gpio):
+	GPIO.setup(gpio, inp, pull_up_down=GPIO.PUD_DOWN)
