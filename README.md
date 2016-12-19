@@ -15,7 +15,7 @@ python with the Pi, so I can get straight on with the task in hand. To use this 
 ` import raspi as p` <br>
 This allows me to import the module from the parent directory.<br> 
 Otherwise I could duplicate the `raspi.py` file into the directory.<br>
-
+Note also that I import it as `p`, so anything starting with `p.` is using code from this module.
 ### A few things you can do with my `raspi` module...
 <ul>
   <li>
