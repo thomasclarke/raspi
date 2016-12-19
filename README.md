@@ -25,5 +25,5 @@ Otherwise I could duplicate the `raspi.py` file into the directory.<br>
   Quick setup of components...<br>
   Setting up components is usually done by `GPIO.setup(gpio, GPIO.IN)` or `~~~GPIO.OUT` but with my `raspi` module, you can simply type `input(gpio)` or `output(gpio)`. Say GPIO21 was an led: `output(21)`. You can also set up pushbuttons quickly using `btn_setup(gpio)`.
   </li>
-<ul>
-It is forever expanding!
+<ul><br>
+The module is forever expanding!
