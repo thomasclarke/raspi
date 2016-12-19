@@ -14,4 +14,12 @@ python with the Pi, so I can get straight on with the task in hand. To use this 
 ` sys.path.insert(0, '../') `<br>
 ` import raspi as p` <br>
 This allows me to import the module from the parent directory.<br> 
-Otherwise I could duplicate the `raspi.py` file into the directory.
+Otherwise I could duplicate the `raspi.py` file into the directory.<br>
+
+### A few things you can do with my `raspi` module...
+<ul>
+  <li> 
+  Quick setup of components...<br>
+  Setting up components is usually done by `GPIO.setup(gpio, GPIO.IN)` or `~~~GPIO.OUT`
+  </li>
+<ul>
